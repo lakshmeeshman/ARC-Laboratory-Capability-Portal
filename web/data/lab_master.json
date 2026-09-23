@@ -1,0 +1,236 @@
+[
+  {
+    "lab_id": "liberec_commercial",
+    "lab_name": "Liberec",
+    "lab_type": "Commercial Lab",
+    "city": "Liberec",
+    "country": "Czech Republic",
+    "region": "Europe",
+    "notes": "Primary regional lab for Central/Eastern Europe with blue-highlighted added capabilities."
+  },
+  {
+    "lab_id": "langweid_commercial",
+    "lab_name": "Langweid",
+    "lab_type": "Commercial Lab",
+    "city": "Langweid",
+    "country": "Germany",
+    "region": "Europe",
+    "notes": "Main textile testing lab in Germany."
+  },
+  {
+    "lab_id": "panyu_commercial",
+    "lab_name": "Panyu",
+    "lab_type": "Commercial Lab",
+    "city": "Panyu",
+    "country": "China",
+    "region": "Asia Pacific",
+    "notes": "Commercial customer support lab in Southern China."
+  },
+  {
+    "lab_id": "shanghai_commercial",
+    "lab_name": "Shanghai",
+    "lab_type": "Commercial Lab",
+    "city": "Shanghai",
+    "country": "China",
+    "region": "Asia Pacific",
+    "notes": "Commercial lab in Shanghai, China."
+  },
+  {
+    "lab_id": "bangpoo_commercial",
+    "lab_name": "Bangpoo",
+    "lab_type": "Commercial Lab",
+    "city": "Bangpoo",
+    "country": "Thailand",
+    "region": "Asia Pacific",
+    "notes": "Commercial lab servicing South East Asia."
+  },
+  {
+    "lab_id": "taipei_commercial",
+    "lab_name": "Taipei",
+    "lab_type": "Commercial Lab",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "region": "Asia Pacific",
+    "notes": "Commercial lab in Taiwan."
+  },
+  {
+    "lab_id": "mumbai_commercial",
+    "lab_name": "Mumbai",
+    "lab_type": "Commercial Lab",
+    "city": "Mumbai",
+    "country": "India",
+    "region": "Asia Pacific",
+    "notes": "Commercial lab servicing Indian subcontinent."
+  },
+  {
+    "lab_id": "charlotte_commercial",
+    "lab_name": "Charlotte",
+    "lab_type": "Commercial Lab",
+    "city": "Charlotte",
+    "country": "USA",
+    "region": "North America",
+    "notes": "Commercial lab in USA with AATCC capabilities."
+  },
+  {
+    "lab_id": "santa_clara_commercial",
+    "lab_name": "Santa Clara",
+    "lab_type": "Commercial Lab",
+    "city": "Santa Clara",
+    "country": "Mexico",
+    "region": "Latin America",
+    "notes": "Commercial lab in Mexico."
+  },
+  {
+    "lab_id": "fraijanes_commercial",
+    "lab_name": "Fraijanes",
+    "lab_type": "Commercial Lab",
+    "city": "Fraijanes",
+    "country": "Guatemala",
+    "region": "Latin America",
+    "notes": "Commercial lab in Guatemala."
+  },
+  {
+    "lab_id": "san_pedro_sula_commercial",
+    "lab_name": "San Pedro Sula",
+    "lab_type": "Commercial Lab",
+    "city": "San Pedro Sula",
+    "country": "Honduras",
+    "region": "Latin America",
+    "notes": "Commercial lab in Honduras."
+  },
+  {
+    "lab_id": "resende_commercial",
+    "lab_name": "Resede",
+    "lab_type": "Commercial Lab",
+    "city": "Resende",
+    "country": "Brazil",
+    "region": "Latin America",
+    "notes": "Commercial lab in Brazil."
+  },
+  {
+    "lab_id": "bogota_commercial",
+    "lab_name": "Bogota",
+    "lab_type": "Commercial Lab",
+    "city": "Bogota",
+    "country": "Colombia",
+    "region": "Latin America",
+    "notes": "Commercial lab in Colombia."
+  },
+  {
+    "lab_id": "castellbisbal_commercial",
+    "lab_name": "Castelbisball",
+    "lab_type": "Commercial Lab",
+    "city": "Castellbisbal",
+    "country": "Spain",
+    "region": "Europe",
+    "notes": "Commercial lab & specialized printing hub in Spain."
+  },
+  {
+    "lab_id": "gebze_commercial",
+    "lab_name": "Gebze",
+    "lab_type": "Commercial Lab",
+    "city": "Gebze",
+    "country": "Turkey",
+    "region": "Europe",
+    "notes": "Commercial lab in Turkey."
+  },
+  {
+    "lab_id": "karachi_commercial",
+    "lab_name": "Karachi",
+    "lab_type": "Commercial Lab",
+    "city": "Karachi",
+    "country": "Pakistan",
+    "region": "Asia Pacific",
+    "notes": "Commercial lab in Pakistan."
+  },
+  {
+    "lab_id": "lima_commercial",
+    "lab_name": "Lima",
+    "lab_type": "Commercial Lab",
+    "city": "Lima",
+    "country": "Peru",
+    "region": "Latin America",
+    "notes": "Commercial lab in Peru."
+  },
+  {
+    "lab_id": "panyu_rt",
+    "lab_name": "Panyu",
+    "lab_type": "R&T Lab",
+    "city": "Panyu",
+    "country": "China",
+    "region": "Asia Pacific",
+    "notes": "Research & Technology innovation center in Panyu."
+  },
+  {
+    "lab_id": "mumbai_rt",
+    "lab_name": "Mumbai",
+    "lab_type": "R&T Lab",
+    "city": "Mumbai",
+    "country": "India",
+    "region": "Asia Pacific",
+    "notes": "Research & Technology center in Mumbai."
+  },
+  {
+    "lab_id": "langweid_rt",
+    "lab_name": "Langweid",
+    "lab_type": "R&T Lab",
+    "city": "Langweid",
+    "country": "Germany",
+    "region": "Europe",
+    "notes": "Research & Technology development center in Langweid."
+  },
+  {
+    "lab_id": "castellbisbal_rt",
+    "lab_name": "Castelbisball",
+    "lab_type": "R&T Lab",
+    "city": "Castellbisbal",
+    "country": "Spain",
+    "region": "Europe",
+    "notes": "Global Printing R&T Competence Center."
+  },
+  {
+    "lab_id": "lamotte_rt",
+    "lab_name": "Lamotte",
+    "lab_type": "R&T Lab",
+    "city": "Lamotte",
+    "country": "France",
+    "region": "Europe",
+    "notes": "Research & Technology lab in Lamotte, France."
+  },
+  {
+    "lab_id": "gendorf_rt",
+    "lab_name": "Gendorf",
+    "lab_type": "R&T Lab",
+    "city": "Gendorf",
+    "country": "Germany",
+    "region": "Europe",
+    "notes": "Fluorochemical & Finishing R&T center in Gendorf."
+  },
+  {
+    "lab_id": "charlotte_rt",
+    "lab_name": "Charlotte",
+    "lab_type": "R&T Lab",
+    "city": "Charlotte",
+    "country": "USA",
+    "region": "North America",
+    "notes": "R&T Center in USA."
+  },
+  {
+    "lab_id": "resende_rt",
+    "lab_name": "Resede",
+    "lab_type": "R&T Lab",
+    "city": "Resende",
+    "country": "Brazil",
+    "region": "Latin America",
+    "notes": "R&T Center in Brazil."
+  },
+  {
+    "lab_id": "bogota_rt",
+    "lab_name": "Bogota",
+    "lab_type": "R&T Lab",
+    "city": "Bogota",
+    "country": "Colombia",
+    "region": "Latin America",
+    "notes": "R&T Center in Colombia."
+  }
+]

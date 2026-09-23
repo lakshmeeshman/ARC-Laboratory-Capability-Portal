@@ -1,0 +1,359 @@
+{
+  "total_records_ingested": 21793,
+  "unique_capabilities": 528,
+  "total_labs": 26,
+  "total_countries": 17,
+  "total_quality_logs": 18851,
+  "logs_sample": [
+    {
+      "log_type": "Naming Normalization",
+      "source_file": "Lab capabilities Archroma 2026_Sep.xlsx",
+      "source_sheet": "Dyeing & Auxiliaries",
+      "source_row": 21,
+      "description": "Expanded Pad Thermosol variants into Pad Thermofix / Pad Thermosol / Pad Fix"
+    },
+    {
+      "log_type": "Naming Normalization",
+      "source_file": "Lab capabilities Archroma 2026_Sep.xlsx",
+      "source_sheet": "Dyeing & Auxiliaries",
+      "source_row": 22,
+      "description": "Normalized 'Pad Humidifix (reactive)' to 'Pad Humidity Fix (reactive)'"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Liberec (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Panyu (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Shanghai (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Bangpoo (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Taipei (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Mumbai (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Charlotte (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Santa Clara (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Fraijanes (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at San Pedro Sula (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Resede (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Bogota (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Mumbai (R&T Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 5,
+      "description": "Updated availability for 'Cellulose' at Panyu (R&T Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Liberec (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Panyu (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Shanghai (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Bangpoo (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Taipei (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Mumbai (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Charlotte (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Santa Clara (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Resede (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Bogota (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 6,
+      "description": "Updated availability for 'Wool' at Mumbai (R&T Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Liberec (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Panyu (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Shanghai (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Bangpoo (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Taipei (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Mumbai (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Charlotte (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Santa Clara (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Fraijanes (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at San Pedro Sula (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Resede (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Bogota (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Mumbai (R&T Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 7,
+      "description": "Updated availability for 'Polyamid' at Panyu (R&T Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 8,
+      "description": "Updated availability for 'Polyacryl' at Liberec (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 8,
+      "description": "Updated availability for 'Polyacryl' at Bangpoo (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 8,
+      "description": "Updated availability for 'Polyacryl' at Taipei (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 8,
+      "description": "Updated availability for 'Polyacryl' at Mumbai (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 8,
+      "description": "Updated availability for 'Polyacryl' at Charlotte (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 8,
+      "description": "Updated availability for 'Polyacryl' at Santa Clara (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 8,
+      "description": "Updated availability for 'Polyacryl' at Fraijanes (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 8,
+      "description": "Updated availability for 'Polyacryl' at Resede (Commercial Lab) to 'Available' (X)"
+    },
+    {
+      "log_type": "Conflict / Update",
+      "source_file": "Lab capabilities Archroma 2026 Liberec.xlsx",
+      "source_sheet": "Pretreatment & Sizing",
+      "source_row": 8,
+      "description": "Updated availability for 'Polyacryl' at Bogota (Commercial Lab) to 'Available' (X)"
+    }
+  ]
+}

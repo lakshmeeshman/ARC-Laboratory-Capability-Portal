@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Node & Next.js
+node_modules/
+web/node_modules/
+web/.next/
+web/out/
+web/.vercel/
+
+# OS & Logs
+.DS_Store
+*.log
+.system_generated/
