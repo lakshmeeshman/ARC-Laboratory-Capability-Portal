@@ -122,28 +122,15 @@ export default class LabCapabilityFinder extends React.Component<ILabCapabilityF
     }, 300);
   };
 
-  private resetFilters = (): void => {
-    this.setState({
-      query: '',
-      country: 'all',
-      region: 'all',
-      labId: 'all',
-      labType: 'all',
-      category: 'all',
-      availability: 'all'
-    }, () => this.executeSearch());
-  };
-
   public render(): React.ReactElement<ILabCapabilityFinderProps> {
-    const { results, metadata, loading, selectedRecord, query, country, labType, labId, category, region, availability } = this.state;
-
+    const { results, metadata, loading, selectedRecord, query, country, labType, category, availability } = this.state;
     const sampleQueries = ['Cellulose Vat', 'Dyeing', 'Pad Thermosol', 'Hydrostatic Pressure', 'AATCC 22', 'AATCC 42', 'AATCC 127', 'Camouflage', 'Automotive', 'Alkali Solubility', 'DIN 54281', 'FR', 'Printing', 'Discharge'];
 
     return (
       <div style={{ fontFamily: 'Segoe UI, sans-serif', padding: '16px', backgroundColor: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
         {/* Header Banner */}
         <div style={{ backgroundColor: '#0f172a', color: '#ffffff', padding: '20px', borderRadius: '12px', marginBottom: '16px' }}>
-          <div style={{ fontSize: '11px', color: '#2dd4bf', fontWeight: 600, textTransform: 'uppercase', tracking: '0.05em', marginBottom: '4px' }}>
+          <div style={{ fontSize: '11px', color: '#2dd4bf', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '4px' }}>
             Archroma Global Laboratory Capability Finder &bull; SharePoint Native
           </div>
           <h2 style={{ fontSize: '20px', fontWeight: 700, margin: '0 0 8px 0' }}>Search Laboratory Capabilities</h2>
@@ -243,7 +230,7 @@ export default class LabCapabilityFinder extends React.Component<ILabCapabilityF
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {results.grouped.map((countryGroup: any) => (
               <div key={countryGroup.country} style={{ backgroundColor: '#ffffff', borderRadius: '10px', border: '1px solid #e2e8f0', overflow: 'hidden' }}>
-                <div style={{ backgroundColor: '#0f172a', color: '#ffffff', padding: '10px 16px', fontSize: '13px', fontWeight: 700, display: 'flex', justify: 'space-between' }}>
+                <div style={{ backgroundColor: '#0f172a', color: '#ffffff', padding: '10px 16px', fontSize: '13px', fontWeight: 700, display: 'flex', justifyContent: 'space-between' }}>
                   <span>🌍 {countryGroup.country} ({countryGroup.region})</span>
                   <span style={{ fontSize: '11px', fontWeight: 500, color: '#cbd5e1' }}>{countryGroup.labs.length} labs supporting</span>
                 </div>

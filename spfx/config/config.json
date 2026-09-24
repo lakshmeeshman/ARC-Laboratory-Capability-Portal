@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "lab-capability-finder-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/labCapabilityFinder/LabCapabilityFinderWebPart.js",
+          "manifest": "./src/webparts/labCapabilityFinder/LabCapabilityFinderWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {}
+}

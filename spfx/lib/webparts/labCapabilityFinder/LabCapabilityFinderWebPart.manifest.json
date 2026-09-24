@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e",
+  "alias": "LabCapabilityFinderWebPart",
+  "componentType": "WebPart",
+
+  "version": "1.0.0",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c45cd31-0246-4269-bda1-7dbd11164115",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Archroma Lab Capability Finder" },
+    "description": { "default": "Search global lab capabilities, locations, and source workbook provenance." },
+    "officeFabricIconFontName": "TestAutoSolid",
+    "properties": {
+      "apiBaseUrl": "http://localhost:3000"
+    }
+  }]
+}
