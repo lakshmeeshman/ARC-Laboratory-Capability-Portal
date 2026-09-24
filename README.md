@@ -2,14 +2,15 @@
 
 An internal enterprise web application designed to consolidate all Archroma laboratory capability Excel workbooks into a searchable, auditable interface.
 
+Supports both **Standalone Web Application Mode** and **Microsoft SharePoint Integration Mode**.
+
 It answers the core question:
 > **"Can this test/capability be performed, and if yes, at which lab, location, and country?"**
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start — Standalone Mode
 
-### 1. Run the Live Web Application
 ```bash
 cd web
 npm install
@@ -19,10 +20,37 @@ Open **`http://localhost:3000`** in your browser.
 
 ---
 
+## 🏢 SharePoint Integration Modes
+
+The application supports two SharePoint deployment paths without modifying the underlying dataset or breaking the standalone app:
+
+### Path A — Hosted Web App via SharePoint Embed Web Part (5 Minutes)
+1. Deploy Next.js `./web` app to your internal server / Azure App Service.
+2. Add the SharePoint Embed Web Part to your SharePoint page:
+   ```html
+   <iframe src="https://lab-finder.archroma.internal/?embedded=true" width="100%" height="800px" frameborder="0"></iframe>
+   ```
+3. Passing `?embedded=true` automatically collapses the standalone sidebar and adapts the interface to fit SharePoint page containers cleanly.
+
+### Path B — Native SharePoint Framework (SPFx) Web Part
+1. Build the SPFx package in `./spfx`:
+   ```bash
+   cd spfx
+   npm install
+   gulp bundle --ship
+   gulp package-solution --ship
+   ```
+2. Upload `spfx/sharepoint/solution/archroma-lab-capability-finder.sppkg` to your organization's **SharePoint Tenant App Catalog**.
+
+For full administrator setup instructions, see **[SHAREPOINT_DEPLOYMENT.md](SHAREPOINT_DEPLOYMENT.md)**.
+
+---
+
 ## 📁 Repository Structure
 
 ```
 .
+├── SHAREPOINT_DEPLOYMENT.md                       # Comprehensive SharePoint Deployment Guide
 ├── Lab capabilities Archroma 2026_Sep.xlsx       # Baseline Consolidated Master Workbook
 ├── Lab capabilities Archroma 2026 Liberec.xlsx   # Liberec Regional Additions (Blue Markings)
 ├── Lab capabilities Archroma 2026 Printing...xlsx # Castellbisbal Printing Additions
@@ -35,10 +63,15 @@ Open **`http://localhost:3000`** in your browser.
 ├── Lab capabilities Archroma 2026.xlsx          # Baseline Reference
 ├── scripts/
 │   └── ingest_excel.py                           # Python data ingestion & normalization pipeline
+├── spfx/                                         # SharePoint Framework (SPFx v1.18+) Web Part Package
+│   ├── config/package-solution.json              # Solution package settings (.sppkg)
+│   └── src/webparts/labCapabilityFinder/         # SPFx React component & manifest
 └── web/                                          # Next.js 16 Web Application
-    ├── app/                                      # App Router screens & API routes
+    ├── app/                                      # App Router screens & API routes (with CORS & ?embedded=true)
     ├── components/                               # UI & Provenance Modal components
-    ├── lib/db.ts                                 # SQLite database & FTS5 search access layer
+    ├── lib/
+    │   ├── db.ts                                 # SQLite database & FTS5 search access layer
+    │   └── auth.ts                               # Microsoft Entra ID token validation module
     └── data/
         ├── archroma.db                           # SQLite FTS5 database (21,793 records)
         ├── lab_master.json                       # Configurable Lab Master directory
@@ -63,33 +96,12 @@ Open **`http://localhost:3000`** in your browser.
    - Maintained distinction between **Commercial Labs** and **R&T Labs** (e.g., Panyu Commercial vs Panyu R&T, Mumbai Commercial vs Mumbai R&T).
    - Mapped 26 labs across 15 countries and 4 global regions.
 
-### How to Add Future Excel Files & Rebuild
-When an updated Excel workbook arrives in the future:
-1. Place the new `.xlsx` file into the root folder.
-2. Run the ingestion pipeline:
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   pip install pandas openpyxl
-   python3 scripts/ingest_excel.py
-   ```
-3. The SQLite database `web/data/archroma.db` will be updated automatically without rewriting any frontend code.
-
 ---
 
-## 🔍 Features & Pages
+## 🛠️ Tech Stack & Governance
 
-- **🔍 Lab Capability Finder (`/`)**: Hero search bar with partial matching, quick search chips, combinable filters (Country, Region, Lab, Lab Type, Category, Availability), deduplicated card views, and clickable **Source Provenance Modal** showing confirming Excel workbooks, worksheet names, row numbers, source indicators (`X`, `(X)`, `O`), font color markings, and change types.
-- **🏢 Master Lab Directory (`/labs` & `/labs/[id]`)**: Full list of 26 active laboratories with capability counts and regional addition highlights.
-- **🌍 Country Directory (`/countries` & `/countries/[id]`)**: Answers *"What can our labs in India / Czech Republic / USA / Spain do?"*.
-- **📁 Capability Categories (`/categories`)**: Detailed overview across the 8 standard Excel sheets.
-- **📊 Analytics Dashboard (`/dashboard`)**: KPI metrics & Recharts visualizations.
-- **🛡️ Data Quality Governance (`/data-quality`)**: Audit trail of detected workbooks, regional additions log, normalization log, and unmapped lab check.
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend**: Next.js 16 (App Router), React, TypeScript, Tailwind CSS, Lucide Icons, Recharts
+- **Frontend**: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, Lucide Icons, Recharts
+- **SharePoint Component**: SPFx v1.18.2, React 18, TypeScript, Fluent UI
 - **Database**: SQLite with FTS5 Full Text Search (`better-sqlite3`)
+- **Authentication**: Microsoft Entra ID (Azure AD) JWT Bearer token validation
 - **Data Ingestion**: Python (`openpyxl`, `pandas`)

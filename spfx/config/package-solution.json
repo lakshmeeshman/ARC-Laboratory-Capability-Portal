@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "archroma-lab-capability-finder-client-side-solution",
+    "id": "e4f8d910-1a2b-4c3d-8e5f-6a7b8c9d0e1f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Archroma Global IT & Digital Solutions",
+      "websiteUrl": "https://www.archroma.com",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined"
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Archroma Lab Capability Finder API",
+        "scope": "user_impersonation"
+      }
+    ],
+    "features": [
+      {
+        "title": "archroma-lab-capability-finder Feature",
+        "description": "SharePoint Web Part for Archroma Lab Capability Finder",
+        "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "sharepoint/solution/archroma-lab-capability-finder.sppkg"
+  }
+}

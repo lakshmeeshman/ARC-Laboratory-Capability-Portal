@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Sidebar from '@/components/Sidebar';
 import Header from '@/components/Header';
 import ProvenanceModal from '@/components/ProvenanceModal';
@@ -11,19 +12,18 @@ import {
   RotateCcw, 
   Globe2, 
   Building2, 
-  Layers, 
   CheckCircle2, 
-  AlertCircle, 
   Info, 
   FileSpreadsheet, 
   Sparkles,
-  ChevronDown,
-  ChevronRight,
   ExternalLink
 } from 'lucide-react';
 import Link from 'next/link';
 
-export default function LabCapabilityFinder() {
+function LabCapabilityFinderContent() {
+  const searchParams = useSearchParams();
+  const isEmbedded = searchParams.get('embedded') === 'true' || searchParams.get('embedded') === '1';
+
   const [query, setQuery] = useState('Cellulose Vat');
   const [country, setCountry] = useState('all');
   const [region, setRegion] = useState('all');
@@ -47,7 +47,7 @@ export default function LabCapabilityFinder() {
   const [loading, setLoading] = useState(false);
   const [selectedRecord, setSelectedRecord] = useState<CapabilityRecord | null>(null);
 
-  // Quick sample queries from business prompt
+  // Quick sample queries
   const sampleQueries = [
     'Cellulose Vat',
     'Dyeing',
@@ -73,7 +73,7 @@ export default function LabCapabilityFinder() {
       .catch(err => console.error(err));
   }, []);
 
-  // Execute Search API call when filters change
+  // Search API fetcher
   const fetchResults = async () => {
     setLoading(true);
     try {
@@ -115,12 +115,13 @@ export default function LabCapabilityFinder() {
 
   return (
     <div className="flex h-screen bg-slate-100 font-sans text-slate-800 overflow-hidden">
-      <Sidebar />
+      {/* Hide Sidebar when running inside SharePoint embedded mode */}
+      {!isEmbedded && <Sidebar />}
 
       <div className="flex-1 flex flex-col overflow-hidden">
-        <Header />
+        {!isEmbedded && <Header />}
 
-        <main className="flex-1 overflow-y-auto p-6 space-y-6">
+        <main className={`flex-1 overflow-y-auto ${isEmbedded ? 'p-4 space-y-4' : 'p-6 space-y-6'}`}>
           {/* Main Hero Search Card */}
           <div className="bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 rounded-2xl p-6 text-white shadow-lg relative overflow-hidden">
             <div className="absolute right-0 top-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -129,6 +130,11 @@ export default function LabCapabilityFinder() {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-300 text-xs font-medium">
                 <Sparkles className="w-3.5 h-3.5 text-teal-400" />
                 <span>Unified Excel Capability Index (2026 Baseline + Regional Additions)</span>
+                {isEmbedded && (
+                  <span className="bg-teal-400 text-slate-950 font-bold px-2 py-0.5 rounded text-[10px] uppercase tracking-wider ml-1">
+                    SharePoint Mode
+                  </span>
+                )}
               </div>
 
               <h1 className="text-2xl font-bold tracking-tight">Archroma Lab Capability Finder</h1>
@@ -456,5 +462,17 @@ export default function LabCapabilityFinder() {
         onClose={() => setSelectedRecord(null)}
       />
     </div>
+  );
+}
+
+export default function LabCapabilityFinder() {
+  return (
+    <Suspense fallback={
+      <div className="flex h-screen items-center justify-center bg-slate-900 text-teal-400 font-semibold text-sm">
+        Loading Archroma Lab Capability Finder...
+      </div>
+    }>
+      <LabCapabilityFinderContent />
+    </Suspense>
   );
 }
