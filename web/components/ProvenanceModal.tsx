@@ -102,35 +102,35 @@ export default function ProvenanceModal({ record, onClose }: ProvenanceModalProp
               </span>
             </div>
 
-            <div className="space-y-1.5 max-h-56 overflow-y-auto pr-1">
+            <div className="space-y-2 max-h-64 overflow-y-auto pr-1">
               {sources.map((src, idx) => (
-                <div key={idx} className="bg-slate-50 p-2.5 rounded border border-slate-200 text-[11px] font-mono flex items-center justify-between gap-2">
-                  <div className="truncate">
-                    <div className="flex items-center gap-2">
-                      <span className="font-bold text-slate-800">{src.source_file}</span>
-                      <a
-                        href={`/excel/${encodeURIComponent(src.source_file)}`}
-                        download={src.source_file}
-                        className="text-emerald-700 hover:text-emerald-800 bg-emerald-50 hover:bg-emerald-100 font-sans font-semibold px-2 py-0.5 rounded border border-emerald-200 inline-flex items-center gap-1 text-[10px] transition-colors"
-                        title="Download this source Excel file"
-                      >
-                        <Download className="w-3 h-3 text-emerald-600" />
-                        <span>Download Excel</span>
-                      </a>
-                    </div>
-                    <span className="text-slate-400 font-sans block text-[10px] mt-0.5">
-                      Sheet: {src.source_sheet} &bull; Row {src.source_row}
+                <div key={idx} className="bg-slate-50 p-3 rounded-lg border border-slate-200 text-[11px] space-y-2">
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="font-bold text-slate-800 font-mono text-[11px] leading-snug break-all">
+                      {src.source_file}
                     </span>
-                  </div>
-                  <div className="text-right shrink-0 font-sans">
-                    <span className="bg-white px-2 py-0.5 rounded border border-slate-300 font-bold text-slate-700">
+                    <span className="bg-white px-2 py-0.5 rounded border border-slate-300 font-bold text-slate-700 text-[10px] shrink-0 font-sans shadow-xs">
                       Indicator: &quot;{src.source_indicator}&quot;
                     </span>
-                    {src.source_color && (
-                      <span className="block text-[10px] text-blue-700 font-semibold mt-0.5">
-                        {src.source_color}
-                      </span>
-                    )}
+                  </div>
+
+                  <div className="flex items-center justify-between gap-2 pt-1.5 border-t border-slate-200/80 font-sans">
+                    <span className="text-slate-500 text-[10px]">
+                      Sheet: <strong className="text-slate-700">{src.source_sheet}</strong> &bull; Row <strong className="text-slate-700">{src.source_row}</strong>
+                      {src.source_color && (
+                        <span className="ml-1 text-blue-700 font-semibold">({src.source_color})</span>
+                      )}
+                    </span>
+
+                    <a
+                      href={`/excel/${encodeURIComponent(src.source_file)}`}
+                      download={src.source_file}
+                      className="text-white bg-emerald-600 hover:bg-emerald-700 font-semibold px-2.5 py-1 rounded-md inline-flex items-center gap-1.5 text-[10px] shadow-xs transition-colors shrink-0"
+                      title={`Download ${src.source_file}`}
+                    >
+                      <Download className="w-3 h-3" />
+                      <span>Download Excel</span>
+                    </a>
                   </div>
                 </div>
               ))}
