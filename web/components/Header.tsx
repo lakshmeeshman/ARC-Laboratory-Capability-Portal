@@ -1,6 +1,6 @@
 'use client';
 
-import { FlaskConical, HelpCircle, RefreshCw } from 'lucide-react';
+import { FlaskConical, HelpCircle, RefreshCw, FileSpreadsheet } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Header() {
@@ -13,7 +13,14 @@ export default function Header() {
         </span>
       </div>
 
-      <div className="flex items-center gap-4 text-xs text-slate-600">
+      <div className="flex items-center gap-3 text-xs text-slate-600">
+        <Link 
+          href="/downloads" 
+          className="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md font-semibold transition-colors shadow-xs"
+        >
+          <FileSpreadsheet className="w-3.5 h-3.5" />
+          <span>Download Excel Files</span>
+        </Link>
         <Link 
           href="/data-quality" 
           className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-md font-medium transition-colors"

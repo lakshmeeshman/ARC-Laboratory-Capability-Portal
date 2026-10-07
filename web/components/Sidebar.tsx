@@ -9,7 +9,8 @@ import {
   Layers, 
   BarChart3, 
   ShieldCheck, 
-  FlaskConical 
+  FlaskConical,
+  FileSpreadsheet
 } from 'lucide-react';
 
 const navigation = [
@@ -19,6 +20,7 @@ const navigation = [
   { name: 'Capability Categories', href: '/categories', icon: Layers },
   { name: 'Analytics Dashboard', href: '/dashboard', icon: BarChart3 },
   { name: 'Data Quality & Audit', href: '/data-quality', icon: ShieldCheck },
+  { name: 'Download Excel Files', href: '/downloads', icon: FileSpreadsheet },
 ];
 
 export default function Sidebar() {

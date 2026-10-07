@@ -1,7 +1,7 @@
 'use client';
 
 import { CapabilityRecord } from '@/lib/db';
-import { X, FileSpreadsheet, MapPin, ShieldCheck, CheckCircle2, Info } from 'lucide-react';
+import { X, FileSpreadsheet, MapPin, ShieldCheck, CheckCircle2, Info, Download } from 'lucide-react';
 
 interface ProvenanceModalProps {
   record: CapabilityRecord | null;
@@ -106,8 +106,19 @@ export default function ProvenanceModal({ record, onClose }: ProvenanceModalProp
               {sources.map((src, idx) => (
                 <div key={idx} className="bg-slate-50 p-2.5 rounded border border-slate-200 text-[11px] font-mono flex items-center justify-between gap-2">
                   <div className="truncate">
-                    <span className="font-bold text-slate-800">{src.source_file}</span>
-                    <span className="text-slate-400 font-sans block text-[10px]">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bold text-slate-800">{src.source_file}</span>
+                      <a
+                        href={`/excel/${encodeURIComponent(src.source_file)}`}
+                        download={src.source_file}
+                        className="text-emerald-700 hover:text-emerald-800 bg-emerald-50 hover:bg-emerald-100 font-sans font-semibold px-2 py-0.5 rounded border border-emerald-200 inline-flex items-center gap-1 text-[10px] transition-colors"
+                        title="Download this source Excel file"
+                      >
+                        <Download className="w-3 h-3 text-emerald-600" />
+                        <span>Download Excel</span>
+                      </a>
+                    </div>
+                    <span className="text-slate-400 font-sans block text-[10px] mt-0.5">
                       Sheet: {src.source_sheet} &bull; Row {src.source_row}
                     </span>
                   </div>
