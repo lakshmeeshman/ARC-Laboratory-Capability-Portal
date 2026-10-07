@@ -8,7 +8,6 @@ import {
   Globe2, 
   Layers, 
   BarChart3, 
-  ShieldCheck, 
   FlaskConical,
   FileSpreadsheet
 } from 'lucide-react';
@@ -19,7 +18,6 @@ const navigation = [
   { name: 'Countries View', href: '/countries', icon: Globe2 },
   { name: 'Capability Categories', href: '/categories', icon: Layers },
   { name: 'Analytics Dashboard', href: '/dashboard', icon: BarChart3 },
-  { name: 'Data Quality & Audit', href: '/data-quality', icon: ShieldCheck },
   { name: 'Download Excel Files', href: '/downloads', icon: FileSpreadsheet },
 ];
 
